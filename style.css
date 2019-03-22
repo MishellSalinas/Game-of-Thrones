@@ -1,0 +1,105 @@
+body {
+  /*background-image: url(images/fondonegro.jpg);*/
+  background-color: black;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.grow {
+  padding-top: 3px;
+  height: 80vh;
+  /* Origional height */
+  box-sizing: border-box;
+  display: flex;
+}
+.grow .item {
+  box-sizing: border-box;
+  flex-grow: 1;
+  transition: width .4s ease;
+  width: 0;
+}
+.grow .item:hover {
+  width: 50%;
+  /* This is the height on hover */
+}
+
+.grow .item {
+  position: relative;
+  overflow: hidden;
+}
+.grow .item .text {
+  position: absolute;
+  font-size: 23px;
+  font-weight: 200;
+  font-family: 'ZCOOL XiaoWei', serif;
+  color: WHITE;
+  opacity: 0;
+  /*text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);*/
+  bottom: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 200px;
+  background-color: rgba(127, 127, 127, 0.2);
+  text-align: center;
+  transition-property: opacity, bottom;
+  transition-duration: .1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+}
+.grow .item:hover .text {
+  opacity: 1;
+  bottom: 10%;
+  transition-duration: .3s, .7s;
+  transition-delay: .4s, .2s;
+}
+.grow .item:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: 3px;
+  bottom: 50px;
+  left: 3px;
+  background-image: url(images/t6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+.grow .item:nth-child(1n):before {
+  background-image: url(images/temporada1.jpg);
+  background-position: 50% 50%;
+}
+
+.grow .item:nth-child(2n):before {
+  background-image: url(images/temporada2.jpg);
+  background-position: 50% 50%;
+}
+.grow .item:nth-child(3n):before {
+  background-image: url(images/temporada3.jpg);
+  background-position: 50% 50%;
+}
+.grow .item:nth-child(4n):before {
+  background-image: url(images/temporada4.jpg);
+  background-position: 50% 50%;
+}
+.grow .item:nth-child(5n):before {
+  background-image: url(images/temporada5.jpg);
+  background-position: 50% 50%;
+}
+.grow .item:nth-child(6n):before {
+  background-image: url(images/temporada6.jpg);
+  background-position: 50% 50%;
+}
+.grow .item:nth-child(7n):before {
+  background-image: url(images/temporada7.jpg);
+  background-position: 50% 50%;
+}
+.titulo {
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+}
