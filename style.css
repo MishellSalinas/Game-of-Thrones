@@ -6,6 +6,11 @@ body {
   width: 100%;
 }
 
+.wrapper{
+
+  background-color: black; 
+}
+
 .grow {
   padding-top: 3px;
   height: 80vh;

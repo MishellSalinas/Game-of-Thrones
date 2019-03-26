@@ -5,3 +5,6 @@ Imagen seleccionada (hover) = 640px
 Imagen no seleccionada (un-hovered) = 80px
 Ancho predeterminado = 960/5 = 192px;
 */
+document.getElementById("vote-btn").onclick = function (){
+    location.href = "Poll/poll.html"
+}
